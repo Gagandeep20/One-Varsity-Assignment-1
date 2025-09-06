@@ -1,4 +1,3 @@
-/* src/App.css */
 :root {
   --sidebar-width: 240px;
   --bg: #f3f4f6;
@@ -15,7 +14,6 @@
   background: var(--bg);
 }
 
-/* Sidebar sits in the flex row and is controlled by flex-basis */
 .sidebar {
   box-sizing: border-box;
   background: linear-gradient(180deg, #0b1220, #111827);
@@ -23,11 +21,10 @@
   transition: flex-basis 280ms ease, width 280ms ease, padding 280ms ease,
     opacity 280ms ease;
   overflow: hidden;
-  flex: 0 0 var(--sidebar-width); /* default full width */
+  flex: 0 0 var(--sidebar-width);
   width: var(--sidebar-width);
 }
 
-/* CLOSED state: zero flex-basis and zero width so it doesn't take space */
 .sidebar.closed {
   flex: 0 0 0;
   width: 0;
@@ -36,7 +33,6 @@
   pointer-events: none;
 }
 
-/* open state */
 .sidebar.open {
   flex: 0 0 var(--sidebar-width);
   width: var(--sidebar-width);
@@ -44,12 +40,11 @@
   pointer-events: auto;
 }
 
-/* MAIN content expands to fill remaining width */
 .main-content {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  min-width: 0; /* IMPORTANT so the content can shrink/expand inside flex */
+  min-width: 0;
 }
 
 .content-area {

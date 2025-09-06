@@ -44,7 +44,6 @@ body {
   padding: 16px;
 }
 
-/* cards row */
 .cards-row {
   display: flex;
   gap: 16px;
@@ -59,7 +58,6 @@ body {
   flex: 1;
 }
 
-/* responsive */
 @media (max-width: 768px) {
   .sidebar {
     position: fixed;

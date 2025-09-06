@@ -1,8 +1,7 @@
-// src/components/Topbar.jsx
 import React, { useContext } from "react";
 import { Menu, X } from "lucide-react";
 import { AuthContext } from "../context/AuthContext";
-import { Link } from "react-router-dom"; // import Link for navigation
+import { Link } from "react-router-dom";
 import "./Topbar.css";
 
 export default function Topbar({ toggleSidebar, isSidebarOpen }) {

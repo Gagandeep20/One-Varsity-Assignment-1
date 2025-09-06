@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import "./Profile.css"; // import the CSS file
+import "./Profile.css";
 
 export default function Profile() {
   const { user, logout } = useContext(AuthContext);

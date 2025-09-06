@@ -6,9 +6,9 @@ export default function Card({
   title,
   value,
   subtitle,
-  icon, // optional JSX (e.g. <svg/> or emoji)
-  trend, // number (positive or negative)
-  loading, // boolean
+  icon,
+  trend,
+  loading,
   className,
 }) {
   const trendClass =

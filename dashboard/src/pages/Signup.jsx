@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
 export default function Signup() {
-  const { signup, login } = useContext(AuthContext); // get login function too
+  const { signup, login } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
@@ -32,9 +32,8 @@ export default function Signup() {
     try {
       const res = await signup(form);
       if (res.success) {
-        // Auto-login after successful signup
         await login(form.email, form.password);
-        navigate("/"); // redirect to dashboard
+        navigate("/");
       } else {
         setError(res.message || "Signup failed");
       }

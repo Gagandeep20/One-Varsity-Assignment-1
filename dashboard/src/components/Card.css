@@ -59,7 +59,6 @@
   color: #0b1220;
 }
 
-/* trend pill */
 .card-trend {
   display: inline-flex;
   align-items: center;
@@ -81,7 +80,6 @@
   background: #fff1f2;
 }
 
-/* skeleton */
 .skeleton {
   display: inline-block;
   width: 110px;
@@ -101,7 +99,6 @@
   }
 }
 
-/* responsive: let card grow/shrink in row */
 @media (min-width: 640px) {
   .card {
     min-width: 200px;

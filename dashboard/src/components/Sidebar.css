@@ -1,11 +1,10 @@
-/* src/components/Sidebar.css */
 .sidebar {
   display: flex;
   flex-direction: column;
   padding: 20px;
   height: 100vh;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.25);
-  background: #111827; /* optional: nice dark bg */
+  background: #111827;
 }
 
 .sidebar-header {
@@ -53,7 +52,7 @@
 .sidebar-footer {
   padding-top: 8px;
   border-top: 1px solid rgba(255, 255, 255, 0.04);
-  margin-top: auto; /* 👈 pushes footer to bottom */
+  margin-top: auto;
 }
 
 .logout-btn {

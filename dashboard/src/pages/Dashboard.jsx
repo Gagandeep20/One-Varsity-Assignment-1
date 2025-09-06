@@ -1,9 +1,8 @@
-// src/pages/Dashboard.jsx
 import React, { useContext } from "react";
 import Card from "../components/Card";
 import ChartWidget from "../components/ChartWidget";
 import { DataContext } from "../context/DataContext";
-import "./Dashboard.css"; // optional: page specific CSS
+import "./Dashboard.css";
 
 export default function Dashboard() {
   const { cards, chartData } = useContext(DataContext);

@@ -10,11 +10,10 @@ export function AuthProvider({ children }) {
   });
 
   async function login(email, password) {
-    // json-server: find user with matching email & password
     const res = await api.get(`/users`, { params: { email, password } });
     if (res.data.length > 0) {
       const u = res.data[0];
-      // create a mock token (do not use in production)
+
       const token = btoa(`${u.id}:${u.email}`);
       const payload = { ...u, token };
       setUser(payload);
@@ -27,7 +26,6 @@ export function AuthProvider({ children }) {
   }
 
   async function signup(payload) {
-    // check existing email
     const check = await api.get("/users", { params: { email: payload.email } });
     if (check.data.length > 0)
       return { success: false, message: "Email in use" };

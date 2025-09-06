@@ -1,12 +1,9 @@
-/* Dashboard.css */
-
 .app-shell {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
 
-/* --- Sidebar handling --- */
 .sidebar {
   width: 240px;
   background: #171717;
@@ -19,7 +16,6 @@
   width: 0;
 }
 
-/* --- Main area --- */
 .main-area {
   flex: 1;
   display: flex;
@@ -28,7 +24,6 @@
   background: #f5f6fa;
 }
 
-/* --- Topbar --- */
 .topbar {
   height: 60px;
   background: #fff;
@@ -42,7 +37,6 @@
   z-index: 1000;
 }
 
-/* --- Content --- */
 .content {
   flex: 1;
   padding: 1.5rem;
