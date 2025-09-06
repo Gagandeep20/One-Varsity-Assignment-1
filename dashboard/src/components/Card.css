@@ -1,0 +1,109 @@
+.card {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(14, 21, 47, 0.06);
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.card-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(79, 70, 229, 0.08),
+    rgba(99, 102, 241, 0.04)
+  );
+  font-size: 18px;
+}
+
+.card-heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b1220;
+}
+
+.card-subtitle {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.card-loader {
+  font-size: 20px;
+  color: #9ca3af;
+}
+
+.card-value {
+  margin-top: 14px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0b1220;
+}
+
+/* trend pill */
+.card-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #065f46;
+  background: #ecfdf5;
+}
+
+.card-trend-up {
+  color: #065f46;
+  background: #ecfdf5;
+}
+.card-trend-down {
+  color: #9f1239;
+  background: #fff1f2;
+}
+
+/* skeleton */
+.skeleton {
+  display: inline-block;
+  width: 110px;
+  height: 28px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 50%, #f3f4f6 75%);
+  background-size: 200% 100%;
+  animation: shine 1.2s linear infinite;
+}
+
+@keyframes shine {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* responsive: let card grow/shrink in row */
+@media (min-width: 640px) {
+  .card {
+    min-width: 200px;
+  }
+}

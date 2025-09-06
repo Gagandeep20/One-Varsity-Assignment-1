@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Test User",
+      "email": "test@example.com",
+      "password": "password",
+      "role": "admin"
+    },
+    {
+      "id": "3d80",
+      "name": "Gagan Singh",
+      "email": "gagan.s.d67@gmail.com",
+      "password": "12345",
+      "role": "user"
+    }
+  ],
+  "dashboardData": [
+    {
+      "id": "1",
+      "label": "Jan",
+      "value": 120
+    },
+    {
+      "id": "2",
+      "label": "Feb",
+      "value": 150
+    },
+    {
+      "id": "3",
+      "label": "Mar",
+      "value": 170
+    }
+  ],
+  "cards": {
+    "activeUsers": 324,
+    "sales": 12500,
+    "newSignups": 45
+  }
+}

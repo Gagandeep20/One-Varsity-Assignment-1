@@ -1,0 +1,15 @@
+/* src/components/Topbar.css */
+.topbar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  /* 👇 match dashboard padding (20px) */
+  padding: 0 20px;
+  margin: 0 20px; /* align with content */
+  border-bottom: 1px solid #e6e9ef;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(11, 17, 34, 0.03);
+  border-radius: 8px; /* optional: looks clean when inset */
+}
