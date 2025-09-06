@@ -5,6 +5,8 @@ import Sidebar from "./components/Sidebar";
 import Topbar from "./components/Topbar";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 import "./App.css";
 
 export default function App() {
@@ -12,25 +14,47 @@ export default function App() {
 
   const toggleSidebar = () => setIsSidebarOpen((s) => !s);
 
-  // quick console debug so you can see the toggle happening in the console
-  // remove in production
-  console.log("sidebar open:", isSidebarOpen);
-
   return (
-    <div className="app">
-      {/* single Sidebar instance controlled by state */}
-      <Sidebar isOpen={isSidebarOpen} />
+    <Routes>
+      {/* Public pages (no sidebar/topbar) */}
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
 
-      <div className="main-content">
-        <Topbar toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
-
-        <div className="content-area">
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/profile" element={<Profile />} />
-          </Routes>
-        </div>
-      </div>
-    </div>
+      {/* Protected pages (with sidebar/topbar) */}
+      <Route
+        path="/"
+        element={
+          <div className="app">
+            <Sidebar isOpen={isSidebarOpen} />
+            <div className="main-content">
+              <Topbar
+                toggleSidebar={toggleSidebar}
+                isSidebarOpen={isSidebarOpen}
+              />
+              <div className="content-area">
+                <Dashboard />
+              </div>
+            </div>
+          </div>
+        }
+      />
+      <Route
+        path="/profile"
+        element={
+          <div className="app">
+            <Sidebar isOpen={isSidebarOpen} />
+            <div className="main-content">
+              <Topbar
+                toggleSidebar={toggleSidebar}
+                isSidebarOpen={isSidebarOpen}
+              />
+              <div className="content-area">
+                <Profile />
+              </div>
+            </div>
+          </div>
+        }
+      />
+    </Routes>
   );
 }

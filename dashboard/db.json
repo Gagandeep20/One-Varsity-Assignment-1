@@ -13,6 +13,20 @@
       "email": "gagan.s.d67@gmail.com",
       "password": "12345",
       "role": "user"
+    },
+    {
+      "id": "c782",
+      "name": ";lkjhgfds",
+      "email": "gagan.s.d67@gmail.in",
+      "password": "12345",
+      "role": "user"
+    },
+    {
+      "id": "904e",
+      "name": "hgfdsa",
+      "email": "gagan.s.d67@mail.com",
+      "password": "12345",
+      "role": "user"
     }
   ],
   "dashboardData": [
