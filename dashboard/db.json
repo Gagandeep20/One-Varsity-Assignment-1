@@ -27,6 +27,13 @@
       "email": "gagan.s.d67@mail.com",
       "password": "12345",
       "role": "user"
+    },
+    {
+      "id": "48da",
+      "name": "testuser",
+      "email": "testuser@gmail.com",
+      "password": "12345",
+      "role": "user"
     }
   ],
   "dashboardData": [
